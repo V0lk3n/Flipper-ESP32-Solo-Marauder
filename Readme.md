@@ -34,7 +34,7 @@ Please feel free to make PR once you test on a different Environment.
     -   Make sure it is version `2.0.2`
 5.  Install the [CP210X Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 6.  Install the [CH340X Drivers](https://github.com/justcallmekoko/ESP32Marauder/blob/master/Drivers/CH34x_Install_Windows_v3_4.EXE)
-6.  With any text editor, open `C:\Users\<USERNAME>\AppDate\Local\Arduino15\packages\esp32\hardware\esp32\2.0.0-rc1\platform.txt`
+6.  With any text editor, open `C:\Users\<USERNAME>\AppDate\Local\Arduino15\packages\esp32\hardware\esp32\2.0.2\platform.txt`
 6.  Add `-w` to the end of line `33` so it appears like so
     -   `build.extra_flags.esp32=-DARDUINO_SERIAL_PORT=0 -w`
 7.  Add `-zmuldefs` to the end of line `27` (`compiler.c.elf.libs.esp32=`)
