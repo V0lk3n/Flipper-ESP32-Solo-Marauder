@@ -119,4 +119,4 @@ putty.exe -serial <COM_PORT> -sercfg 115200,8,n,1,N
 
 Thanks to [@justcallmekoko](https://github.com/justcallmekoko) for the [ESP32Marauder firmware](https://github.com/justcallmekoko/ESP32Marauder).  
 Thanks to [@lbernstone](https://github.com/lbernstone) for the [arduino esp32 solo library](https://github.com/lbernstone/arduino-esp32-solo).  
-Thanks to [@me-no-dev](https://github.com/me-no-dev) for the arduino [esp32 file system plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin).  
+Thanks to [@me-no-dev](https://github.com/me-no-dev) for the [arduino esp32 file system plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin).  
