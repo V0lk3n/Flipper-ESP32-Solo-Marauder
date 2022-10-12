@@ -17,13 +17,15 @@ Here is how to make it work on a one core ESP32.
   * [Install ESP32 Fileserver Upload](#InstallESP32FS)
   * [Install Marauder From Sources](#InstallMarauder)
   
-## Tested Device<a name="TestedDevice"></a>
+## Tested Stuff
+
+### Tested Device<a name="TestedDevice"></a>
 
 Please feel free to make PR once you test on a different board.
 
 - ESP32-DevKitM-1
 
-## Tested Environment<a name="TestedEnvironment"></a>
+### Tested Environment<a name="TestedEnvironment"></a>
 
 Please feel free to make PR once you test on a different Environment.
 
@@ -112,3 +114,8 @@ At my second attempt, i've chosen "Marauder Flipper", asking me "Well, you want 
 putty.exe -serial <COM_PORT> -sercfg 115200,8,n,1,N
 ```
 
+## Special Thanks
+
+Thanks to [@justcallmekoko](https://github.com/justcallmekoko) for the [ESP32Marauder firmware](https://github.com/justcallmekoko/ESP32Marauder).
+Thanks to [@lbernstone](https://github.com/lbernstone) for the [arduino esp32 solo library](https://github.com/lbernstone/arduino-esp32-solo).
+Thanks to [@me-no-dev](https://github.com/me-no-dev) for the arduino [esp32 file system plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin).
