@@ -6,13 +6,24 @@ The main problem to flash marauder on my ESP was because marauder is mainly dest
 
 Here is how to make it work on a one core ESP32.
 
-## Tested Device
+# Table of Content
+* Tested Stuff
+  * [Tested Device](#TestedDevice)
+  * [Tested Environment](#TestedEnvironment)
+* Compilation and Flashing
+  * [Install Arduino IDE v.1.8.19](#InstallArduinoIDE)
+  * [Modify ESP32 Library with the Solo Library](#ModifiyESP32Lib)
+  * [Install Libraries](#InstallLibraries)
+  * [Install ESP32 Fileserver Upload](#InstallESP32FS)
+  * [Install Marauder From Sources](#InstallMarauder)
+  
+## Tested Device<a name="TestedDevice"></a>
 
 Please feel free to make PR once you test on a different board.
 
 - ESP32-DevKitM-1
 
-## Tested Environment
+## Tested Environment<a name="TestedEnvironment"></a>
 
 Please feel free to make PR once you test on a different Environment.
 
@@ -23,7 +34,7 @@ Please feel free to make PR once you test on a different Environment.
 
 ## Compilation and Flashing
 
-### Install Arduino IDE v.1.8.19
+### Install Arduino IDE v.1.8.19<a name="InstallArduinoIDE"></a>
 
 1.  Install and open the release version 1.8.19 of [Arduino IDE](https://www.arduino.cc/en/main/software)
 2.  In the Arduino IDE, go to `File`>`Preferences`
@@ -39,13 +50,13 @@ Please feel free to make PR once you test on a different Environment.
     -   `build.extra_flags.esp32=-DARDUINO_SERIAL_PORT=0 -w`
 7.  Add `-zmuldefs` to the end of line `27` (`compiler.c.elf.libs.esp32=`)
 
-### Modify ESP32 Library with the Solo Library
+### Modify ESP32 Library with the Solo Library<a name="ModifyESP32Lib"></a>
 
 1. Download the source code of  [`Arduino ESP32 Solo`](https://github.com/lbernstone/arduino-esp32-solo) which match our library version (2.0.2). You can download it [here](https://github.com/lbernstone/arduino-esp32-solo/releases/tag/v2.0.2)
 2. Unzip it and move the `tools` folder into your ESP32 Library (should be located at : `C:\Users\YourUsername\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.2`), replace every files when asked.
 3. Close and re-open Arduino IDE.
 
-### Install Libraries
+### Install Libraries<a name="InstallLibraries"></a>
 
 Download and install the following libraries using the ZIP library installer under `Sketch`>`Library`>`Add .ZIP Library`
 
@@ -58,14 +69,14 @@ Download and install the following libraries using the ZIP library installer und
 -   [ArduinoJson](https://github.com/bblanchon/ArduinoJson/releases/tag/v6.18.2)
 -   [SwitchLib](https://github.com/justcallmekoko/SwitchLib/releases/latest)
 
-### Install ESP32 filesystem uploader 
+### Install ESP32 filesystem uploader<a name="InstallESP32FS"></a> 
 
 -   Make sure you use one of the supported versions of Arduino IDE and have ESP32 core installed.
 -   Download the tool archive from [releases page](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/latest).
 -   Unpack the tool into tools directory, create it if it doesn't exist (by default, the path will look like `C:\Users\YourUsername\Documents\Arduino\tools\ESP32FS\tool\esp32fs.jar`).
 -   Restart Arduino IDE.
 
-### Install Marauder from Sources
+### Install Marauder from Sources<a name="InstallMarauder"></a>
 
 1. Download the whole repository. You can Download it [here](https://github.com/justcallmekoko/ESP32Marauder)
 2. Open `ESP32Marauder\esp32_marauder\esp32_marauder.ino`, it will load the whole project into you'r Arduino IDE.
@@ -80,17 +91,16 @@ Download and install the following libraries using the ZIP library installer und
 #define MARAUDER_FLIPPER
 ```
 
-```
-NOTE : In my first attempt, i've chosen "Marauder Mini" as my board is based on ESP32-Mini. But then flashing it failed (I guess because of SD card that isn't here, and maybe TFT Sceen).
 
+NOTE : In my first attempt, i've chosen "Marauder Mini" as my board is based on ESP32-Mini. But then flashing it failed (I guess because of SD card that isn't here, and maybe TFT Sceen).
 At my second attempt, i've chosen "Marauder Flipper", asking me "Well, you want to make it work for flipper zero, not to become the Marauder Mini Device, so why not?" and it worked. (Also, there is no SD Card on the Flipper Wifi Dev Board, and no TFT Screen)
-``` 
+ 
 
 4. Press the `BOOT` button of you'r ESP32 and plug it into a USB port.
 5. Under `Tools` menu :
     - Select the COM port under `Tools`>`Port`, then allways under `Tools` select the following.
-	- Select the board `Node32s`
-    - 1. Upload Speed set to `115200`
+    - Select the board `Node32s`
+    - Upload Speed set to `115200`
     - Flash Frequency set to `80Mhz`
     - Partition Scheme set to `Minimal SPIFFS (Large APPS with OTA)`
 6. Under `Tools` menu, click `ESP32 Sketch Data Upload` and wait for the SPIFFS upload to finish.
