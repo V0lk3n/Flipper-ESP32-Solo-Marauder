@@ -95,7 +95,7 @@ Download and install the following libraries using the ZIP library installer und
 ```
 
 
-NOTE : In my first attempt, i've chosen "Marauder Mini" as my board is based on ESP32-Mini. But then flashing it failed (I guess because of SD card that isn't here, and maybe TFT Sceen).
+NOTE : In my first attempt, i've chosen "Marauder Mini" as my board is based on ESP32-Mini. But then flashing it failed (I guess because of SD card that isn't here, and maybe TFT Sceen).  
 At my second attempt, i've chosen "Marauder Flipper", asking me "Well, you want to make it work for flipper zero, not to become the Marauder Mini Device, so why not?" and it worked. (Also, there is no SD Card on the Flipper Wifi Dev Board, and no TFT Screen)
  
 
@@ -117,6 +117,6 @@ putty.exe -serial <COM_PORT> -sercfg 115200,8,n,1,N
 
 ## Special Thanks<a name="SpecialThanks"></a>
 
-Thanks to [@justcallmekoko](https://github.com/justcallmekoko) for the [ESP32Marauder firmware](https://github.com/justcallmekoko/ESP32Marauder).
-Thanks to [@lbernstone](https://github.com/lbernstone) for the [arduino esp32 solo library](https://github.com/lbernstone/arduino-esp32-solo).
-Thanks to [@me-no-dev](https://github.com/me-no-dev) for the arduino [esp32 file system plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin).
+Thanks to [@justcallmekoko](https://github.com/justcallmekoko) for the [ESP32Marauder firmware](https://github.com/justcallmekoko/ESP32Marauder).  
+Thanks to [@lbernstone](https://github.com/lbernstone) for the [arduino esp32 solo library](https://github.com/lbernstone/arduino-esp32-solo).  
+Thanks to [@me-no-dev](https://github.com/me-no-dev) for the arduino [esp32 file system plugin](https://github.com/me-no-dev/arduino-esp32fs-plugin).  
