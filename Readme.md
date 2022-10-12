@@ -7,17 +7,18 @@ The main problem to flash marauder on my ESP was because marauder is mainly dest
 Here is how to make it work on a one core ESP32.
 
 # Table of Content
-* Tested Stuff
+* [Tested Stuff](#TestedStuff)
   * [Tested Device](#TestedDevice)
   * [Tested Environment](#TestedEnvironment)
-* Compilation and Flashing
+* [Compilation and Flashing](#CompileAndFlash)
   * [Install Arduino IDE v.1.8.19](#InstallArduinoIDE)
   * [Modify ESP32 Library with the Solo Library](#ModifiyESP32Lib)
   * [Install Libraries](#InstallLibraries)
   * [Install ESP32 Fileserver Upload](#InstallESP32FS)
   * [Install Marauder From Sources](#InstallMarauder)
+* [Special Thanks](#SpecialThanks)
   
-## Tested Stuff
+## Tested Stuff<a name="TestedStuff"></a>
 
 ### Tested Device<a name="TestedDevice"></a>
 
@@ -34,7 +35,7 @@ Please feel free to make PR once you test on a different Environment.
 * ESP32 Library v.2.0.2
 * ESP32 Solo Library v.2.0.2
 
-## Compilation and Flashing
+## Compilation and Flashing<a name="CompileAndFlash"></a>
 
 ### Install Arduino IDE v.1.8.19<a name="InstallArduinoIDE"></a>
 
@@ -114,7 +115,7 @@ At my second attempt, i've chosen "Marauder Flipper", asking me "Well, you want 
 putty.exe -serial <COM_PORT> -sercfg 115200,8,n,1,N
 ```
 
-## Special Thanks
+## Special Thanks<a name="SpecialThanks"></a>
 
 Thanks to [@justcallmekoko](https://github.com/justcallmekoko) for the [ESP32Marauder firmware](https://github.com/justcallmekoko/ESP32Marauder).
 Thanks to [@lbernstone](https://github.com/lbernstone) for the [arduino esp32 solo library](https://github.com/lbernstone/arduino-esp32-solo).
